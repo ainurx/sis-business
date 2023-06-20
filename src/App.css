@@ -16,7 +16,7 @@ body{
 .right-shadow { 
   position: absolute; 
   right: 0; 
-  height: 400px;
+  height: 514px;
   width: 720px;
   background: linear-gradient(270.59deg, #121212 0.43%, rgba(9, 9, 9, 0) 53.15%); 
 }
@@ -29,6 +29,12 @@ body{
   padding: 8px 12px;
   /* background-color: #141414; */
 
+}
+
+.mini-card{
+  background: linear-gradient(180deg, #222731 0%, #0D0611 100%);
+  padding: 24px;
+  border-radius: 1em;
 }
 
 /* END CONTENT */

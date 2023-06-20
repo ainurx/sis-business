@@ -6,17 +6,17 @@ const contentData = [
   {
     img: require('../assets/img/content-1.png'),
     title: 'Mastering the Art of Sales',
-    desc: 'lorem ipsum'
+    desc: 'Sales is the lifeblood of any business, driving revenue and growth. To excel in the competitive marketplace, sales professionals need to continuously refine their skills, adapt to changing customer preferences, and employ effective strategies.'
   },
   {
     img: require('../assets/img/content-2.png'),
     title: 'The Powr of Understanding Your Customer',
-    desc: 'lorem ipsum'
+    desc: 'Customers are the lifeblood of any business. Understanding their needs, preferences, and behaviors is essential for building strong relationships that drive business success. In this article,'
   },
   {
     img: require('../assets/img/content-3.png'),
-    title: 'Captivating Customers witch Care',
-    desc: 'lorem ipsum'
+    title: 'Captivating Customers with Compelling',
+    desc: 'When it comes to selling a product, effective presentation is key. A well-crafted and compelling product description has the power to captivate potential customers, generate interest, and ultimately drive sales. In this article, we will explore the art of presenting a product and provide insights into creating descriptions that resonate with customers and showcase the value of your offerings.'
   },
 ]
 
@@ -48,13 +48,15 @@ function Banner(){
           </div>
         </div>
       </Container>
-      <div style={{ overflow: 'hidden', height: '460px'}}>
-        <div style={{ display: 'flex', position: 'absolute', right: -50, marginTop: '32px', overflowX: 'hidden' }}>
-          {
-            contentData.map(c=> (
-              <ContentCard img={c.img} title={c.title} desc={c.desc}/>
-            ))
-          }
+      <div style={{ overflow: 'hidden', height: '560px'}}>
+        <div style={{ position: 'relative', marginTop: '32px' }}>
+          <div style={{ display: 'flex', position: 'absolute', right: -30}}>
+            {
+              contentData.map(c=> (
+                <ContentCard img={c.img} title={c.title} desc={c.desc}/>
+              ))
+            }
+          </div>
           <div className='right-shadow'></div>
         </div>
       </div>
